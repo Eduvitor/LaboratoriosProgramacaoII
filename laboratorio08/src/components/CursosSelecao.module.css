@@ -1,0 +1,11 @@
+.EstiloCursos {
+    background-color: white;
+    display: flex;
+    justify-content: space-around; /* Centraliza horizontalmente */
+    align-items:center; /* Centraliza verticalmente */
+    height: auto; /* Altura total da viewport */
+    width: auto;
+    position: relative;
+    border: 3, black;
+    border-style:double;
+}

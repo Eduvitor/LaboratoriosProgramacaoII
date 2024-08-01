@@ -1,0 +1,22 @@
+.Tabela {
+    border-color: black;
+    color: black;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px, solid;
+}
+
+.Tabela th,
+.Tabela td {
+  border: 1px solid black; /* Adiciona uma borda preta às células */
+  padding: 8px; /* Adiciona espaçamento interno às células */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.Tabela th {
+    background-color: #f2f2f2; /* Define a cor de fundo das células do cabeçalho */
+}
+
+.DivTabela {
+    margin-top: 10px;
+}

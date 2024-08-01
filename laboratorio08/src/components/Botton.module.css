@@ -1,0 +1,27 @@
+.espaco {
+    justify-content: center;
+}
+
+.Botton {
+    width: 60px;
+    height: 30px;
+    border: 0;
+    font-size: medium;
+    font-weight: 100;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    cursor: pointer; /* Adiciona um cursor pointer para indicar que é clicável */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.Botton:hover {
+    background-color: #333; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
+  }
+  
+  .Botton:active {
+    background-color: #555; /* Altera a cor de fundo ao clicar */
+    transform: scale(0.95); /* Diminui ligeiramente o tamanho do botão ao clicar */
+  }

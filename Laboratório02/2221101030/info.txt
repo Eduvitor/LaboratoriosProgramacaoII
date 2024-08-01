@@ -1,0 +1,3 @@
+Caso a execucao dos codigos nao sejam feitam no console do navegador, ha um trycatch e um esquema com o objeto windown para 
+verificar se o prompt pode ser usado, caso nao, sera rodado um exemplo com valores fixos.
+!---As questoes 8 e 6 não tem essa verificação, portanto estao sem exemplos---!

@@ -1,0 +1,25 @@
+.Container {
+    background-color: #00693e;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 200px; /* Altura total da viewport */
+    position:relative;
+    flex-wrap: wrap;
+}
+.logoUFFS {
+    margin: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    
+}
+.titulo {
+    color: white;
+    align-self: center;
+}
+.CabeMenu {
+    position: absolute;
+    align-self: flex-end;
+}

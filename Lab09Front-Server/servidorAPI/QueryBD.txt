@@ -1,0 +1,39 @@
+-- Table: public.cursos
+
+-- DROP TABLE IF EXISTS public.cursos;
+
+CREATE TABLE IF NOT EXISTS public.cursos
+(
+    id integer NOT NULL,
+    nome_curso character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    descricao text COLLATE pg_catalog."default",
+    turno character varying(10) COLLATE pg_catalog."default",
+    coordenadores character varying(50) COLLATE pg_catalog."default",
+    semestre character varying(20) COLLATE pg_catalog."default",
+    CONSTRAINT cursos_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.cursos
+    OWNER to postgres;
+
+insert into cursos (id, nome_curso, descricao, turno, coordenadores, semestre) values (1005, 'Letras', 'Sem descri
+cao', 'Integral', 'Nao tem', 'Terceiro semestres');
+insert into cursos (id, nome_curso, descricao, turno, coordenadores, semestre) values (1100, 'Ciencia da computacao', 'Sem descri
+cao', 'Integral', 'Pessoa1, Pessoa2', 'Quarto semestre');
+insert into cursos (id, nome_curso, descricao, turno, coordenadores, semestre) values (1109, 'Geografia', 'Estudar as preda', 'Noturno', 'Pessoa1, Pessoa2', 'Quinto semestre');
+
+
+CREATE TABLE ccrs (
+	materia varchar(100) not null,
+	id_ccr varchar(10),
+	curso_id int,
+	FOREIGN KEY (curso_id) references cursos(id)
+);
+
+insert into ccrs (materia, id_ccr, curso_id) values ('Estrutura de dados', 'GEX913', 1100);
+insert into ccrs (materia, id_ccr, curso_id) values ('Calculo I', 'GEX250', 1100);
+insert into ccrs (materia, id_ccr, curso_id) values ('Producao textual academica', 'GSR192', 1100);
+insert into ccrs (materia, id_ccr, curso_id) values ('Circuitos Digitais', 'GEX259', 1100);
+insert into ccrs (materia, id_ccr, curso_id) values ('Probabilidade e estatistica', 'GEX069', 1100);
